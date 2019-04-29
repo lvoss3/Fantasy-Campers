@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
 
 public class Game {
 
@@ -10,11 +8,6 @@ public class Game {
     Database db;
 
     public static void main(String[] args){
-    	GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-    	String []fontFamilies = ge.getAvailableFontFamilyNames();
-    	for(String font: fontFamilies){
-    		System.out.println(font);
-    	}
 
         new Game(); // 1.0.0
 

@@ -3,7 +3,6 @@ import java.awt.*;
 
 public class FourOptionDecision extends JPanel {
 
-    Font normFont = new Font("Retro Computer", Font.PLAIN, 16);
     Option option_1;
     Option option_2;
     Option option_3;
