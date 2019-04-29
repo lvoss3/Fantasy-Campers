@@ -10,13 +10,10 @@ public class Game {
     Database db;
 
     public static void main(String[] args){
-    	
-    	try {
-    	     GraphicsEnvironment ge = 
-    	         GraphicsEnvironment.getLocalGraphicsEnvironment();
-    	     ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("retro_computer_personal_use.ttf")));
-    	} catch (IOException|FontFormatException e) {
-    	     
+    	GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+    	String []fontFamilies = ge.getAvailableFontFamilyNames();
+    	for(String font: fontFamilies){
+    		System.out.println(font);
     	}
 
         new Game(); // 1.0.0
