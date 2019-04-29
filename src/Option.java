@@ -16,6 +16,7 @@ public class Option extends JButton {
 	        this.optionText = optionText;
 	        this.setBackground(Color.black);
 	        this.setForeground(Color.white);
+	        this.setBorderPainted(false);
 	        this.setOpaque(false);
 	        this.setFont(normFont);
 	        this.setFocusPainted(false);
