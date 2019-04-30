@@ -7,7 +7,7 @@ public class OptionsPanel extends JPanel {
     int[] results;
 
     public OptionsPanel(Container con, Renderer renderer, String[] optionTexts, int[] results){
-        this.setBounds(150, 390, 500, 150);
+        this.setBounds(0, 390, 800, 150);
         this.num = optionTexts.length;
         this.optionTexts = optionTexts;
         this.setOpaque(false);
@@ -21,7 +21,7 @@ public class OptionsPanel extends JPanel {
             this.add(decision);
         }
         else if(num == 3){
-            TwoOptionDecision decision = new TwoOptionDecision(con, renderer, optionTexts, results);
+            ThreeOptionDecision decision = new ThreeOptionDecision(con, renderer, optionTexts, results);
             this.add(decision);
         }
         else if(num == 4){

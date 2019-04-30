@@ -41,7 +41,7 @@ public class BackgroundPane extends JPanel {
         Graphics2D g2 = resized.createGraphics();
         g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
                 RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-        g2.drawImage(bg, 0, 0, 800, 580, 0, 0, bg.getWidth(),
+        g2.drawImage(bg, 0, 0, 800, 600, 0, 0, bg.getWidth(),
                 bg.getHeight(), null);
         g2.dispose();
 

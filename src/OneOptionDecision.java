@@ -3,7 +3,6 @@ import java.awt.*;
 
 public class OneOptionDecision extends JPanel {
 
-    Font normFont = new Font("Retro Computer", Font.PLAIN, 16);
     Option option_1;
 
     public OneOptionDecision(Container con, Renderer renderer, String[] optionTexts, int[] results){
