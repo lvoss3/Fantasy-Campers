@@ -12,7 +12,7 @@ public class Option extends JButton {
 		try {
 			Font f;
 			f = Font.createFont(Font.TRUETYPE_FONT, new File("./res/retro_computer_personal_use.ttf"));
-			Font normFont = f.deriveFont(16f);
+			Font normFont = f.deriveFont(14f);
 	        this.optionText = optionText;
 	        this.setBackground(Color.black);
 	        this.setForeground(Color.white);

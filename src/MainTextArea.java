@@ -9,7 +9,7 @@ public class MainTextArea extends JTextArea {
     	
 		try {
 			Font f = Font.createFont(Font.TRUETYPE_FONT, new File("./res/retro_computer_personal_use.ttf"));
-			Font normFont = f.deriveFont(16f);
+			Font normFont = f.deriveFont(14f);
 			this.setBounds(100, 500, 600, 150);
 	        this.setBackground(Color.black);
 	        this.setForeground(Color.white);
