@@ -1,3 +1,8 @@
+/**
+* This is the main class that does all the work of rendering the GUI elements as objects
+* (Req. 2.0.0, 3.0.0, 4.0.0, 5.0.0, 8.0.0, 9.0.0, 10.0.0, 11.0.0)
+*/
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -9,7 +14,7 @@ public class Renderer {
     JFrame window;
     Container con;
 
-    public Renderer(){
+    public Renderer(){ // main renderer class that does the heavy lifting
         window = new JFrame("Fantasy Campers"); // 2.0.0
         window.setSize(800, 600);
         window.setResizable(false);
@@ -21,12 +26,13 @@ public class Renderer {
         window.setVisible(true);
     }
 
-    public void render(Container con, int index){
+    public void render(Container con, int index){ // container for rendered elements
         con.removeAll();
         con.setVisible(false);
 
-
-        MainPanel background = new MainPanel(this.db.a[index].filepath);
+		// tie in other methods to paint the entire GUI window
+		
+        MainPanel background = new MainPanel(this.db.a[index].filepath); 
 
         NavPanel nav = new NavPanel(con,this, window);
 
